@@ -1,0 +1,253 @@
+.reklama {
+  max-width: 1171px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+
+  &-button {
+    position: absolute;
+    z-index: 2;
+    font-size: 4rem;
+    background: none;
+    border: none;
+    top: 55%;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .2);
+
+    &:hover,
+    &:focus {
+      color: white;
+      background-color: rgba(0, 0, 0, .2);
+    }
+
+  }
+
+  &-next {
+    display: block;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    float: right;
+    left: 200%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+  &-prev {
+    display: block;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: -100%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+
+  &-content {
+      width: 100%;
+  }
+
+  &-img {
+      width: 100%;
+      max-height: 400px;
+    }
+}
+  
+  #reklama-slider {
+    background: #353638;
+    display: flex;
+    max-width: 870px;
+    max-height: 400px;
+    margin: auto;
+    margin-right: 36px;
+    position: relative;
+    border: 1.3px solid #a9a4a4;
+    border-radius: 3px;
+    box-shadow: 0px 0px 6px 2px rgba(138, 137, 137, 0.59), 0px 1px 6px -15px rgba(253, 244, 244, 0.92);
+  }
+  
+  #reklama-slider-content {
+    overflow: hidden;
+    position: relative;
+    padding: auto;
+    width: 100%;
+    height: 100%;
+
+  }
+  
+  #reklama-slider-content>ul {
+    width: 500%;
+    position: relative;
+    margin: 0;
+    padding: auto;
+    -webkit-transition: left .5s;
+    -moz-transition: left .5s;
+    -o-transition: left .5s;
+    transition: left .5s;
+  }
+  #reklama-slider-content>ul>li {
+    width: 20%;
+    float: left;
+    position: relative;
+  }
+  #reklama-slider-content>ul>li p {
+    padding: 20px;
+  }
+  
+  #reklama-slider-content>ul>li>img {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+  }
+  #reklama-slider input[type=radio] {
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    z-index: 1;
+    visibility: hidden;
+  }
+  #reklama-slider label {
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    z-index: 1;
+    width: 15px;
+    height: 15px;
+    background: #171515;
+    cursor: pointer;
+    -webkit-transition: background-color .5s;
+    -moz-transition: background-color .5s;
+    -o-transition: background-color .5s;
+    transition: background-color .5s;
+    border-radius: 100px;
+    border: 1px solid #717171;
+  }
+  
+  #reklama-slider #reklama-btn-1:checked~label[for=reklama-btn-1] { background: #656262;
+  border: 1px solid #b5b5b5;
+  }
+  #reklama-slider #reklama-btn-2:checked~label[for=reklama-btn-2] { background: #656262;
+    border: 1px solid #b5b5b5;  
+  }
+  #reklama-slider #reklama-btn-3:checked~label[for=reklama-btn-3] { background: #656262;
+    border: 1px solid #b5b5b5;  
+  }
+  
+  #reklama-slider label[for=reklama-btn-1] { margin-bottom: 50px; margin-left: -40px }
+  #reklama-slider label[for=reklama-btn-2] { margin-bottom: 50px; margin-left: -20px }
+  #reklama-slider label[for=reklama-btn-3] { margin-bottom: 50px; margin-left: 0px }
+  
+  #reklama-slider #reklama-btn-1:checked~#reklama-slider-content>ul { left: 0 }
+  #reklama-slider #reklama-btn-2:checked~#reklama-slider-content>ul { left: -100% }
+  #reklama-slider #reklama-btn-3:checked~#reklama-slider-content>ul { left: -200% }
+
+.reklama-card {
+  width: 265px;
+  height: 397px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #CDCDCD;
+  border-radius: 3px;
+
+  &-flex {
+    display: flex;
+  }
+
+  &-action {
+    width: 90px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1C62CD;
+    border-color: #1C62CD;
+    margin-right: 54px;
+
+    &-content {
+      font-family: 'Proxima Nova';
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+
+    &-price {
+      font-family: 'Barlow';
+      width: 56px;
+      margin-left: 196px;
+      position: relative;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: #C4C4C4;
+      margin-bottom: 8px;
+
+      &::before {
+        border-bottom: 0.5px solid #C4C4C4;
+        transform: rotate(-5.33deg);
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 50%;
+        transform: rotate(-7deg);
+      }
+
+      &-new {
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 32px;
+        color: #1C62CD;
+      }
+    }
+  }
+
+  &-img {
+    width: 125px;
+    height: 177px;
+    margin-left: 40px;
+    margin-bottom: 4px;
+  }
+
+  &-content {
+    font-family: 'SF Pro Display';
+    width: 194px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    margin-left: 60px;
+    margin-bottom: 7px;
+
+    &-title {
+      width: 263px;
+      height: 105px;
+      background: #F0F0F4;
+    }
+
+    &-subtitle {
+      font-style: normal;
+      font-size: 18px;
+      line-height: 21px;
+      margin-top: 26px;
+      display: flex;
+      justify-content: center;
+
+      &-data {
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        color: #1C62CD;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
