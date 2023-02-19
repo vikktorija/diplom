@@ -7,48 +7,15 @@
   text-decoration: none;
 }
 
-@media (max-width: 320px) {
-
-  .menu-products-content {
-    display: none;
-  }
-
-  label.menu-btn {
-    display: block;
-    padding-top: 45px;
-  }
-
-  .header-logo {
-    display: none;
-
-    &-content {
-      display: block
-    }
-  }
-
-  .header-map {
-    display: none;
-  }
-
-  .header-menu-nav {
-    padding-top: 125px;
-    position: absolute;
-  }
-
-  .header-navigation {
-    margin-bottom: 28px;
-  }
-
-}
-
 #menu-toggle {
     opacity: 0;
     }
 
+
 .menu-btn {
     display: none;
     align-items: center; 
-    position: fixed;
+    position: absolute;
     top: 20px;
     left: 20px;
     width: 26px;
@@ -174,7 +141,6 @@
 
   .menu-products {
     display: flex;
-    justify-content: space-between;
     background: #F0F0F4;
     max-width: 1171px;
     min-height: 53px;
@@ -184,11 +150,10 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 9.8%;
+      width: 100%;
     }
 
     &-content {
-      font-style: normal;
       font-size: 20px;
       line-height: 24px;
 

@@ -1,17 +1,17 @@
 .header {
     max-width: 1171px;
+    padding-top: 25px;
     margin: auto;
 
     &-menu {
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
 
         &-nav {
             display: flex;
-            gap: 50px;
-            margin-right: 92px;
-            padding-top: 53px;
+            justify-content: space-between;
+            gap: 10%;
+            padding-top: 27px;
 
             &-decoration {
                 font-weight: 700;
@@ -31,7 +31,7 @@
         &-profile {
             display: flex;
             gap: 10px;
-            padding-top: 54px;
+            padding-top: 29px;
             position: relative;
 
                     
@@ -62,8 +62,6 @@
     }
 
     &-logo {
-        padding-top: 20px;
-        margin-right: 101px;
         margin-bottom: 21px;
         display: flex;
         justify-content: center;
@@ -71,8 +69,7 @@
         &-content {
             display: none;
             padding-left: 78px;
-            padding-top: 60px;
-            margin-right: 36px;
+            padding-top: 29px;
             cursor: pointer;
         }
     }
@@ -84,21 +81,24 @@
 
     &-navigation {
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
+        width: 33%;
     }
 
     &-map {
-        padding-top: 42px;
+        padding-top: 17px;
         display: flex;
         gap: 3px;
 
+        &-nav {
+            height: 30px;
+        }
+
         &-content {
             padding-top: 11px;
-            font-style: normal;
             font-weight: 700;
             font-size: 20px;
             line-height: 24px;
-            margin-right: 83px;
 
             & a:hover {
                 color: blue;

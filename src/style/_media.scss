@@ -1,0 +1,202 @@
+@media (max-width: 375px) {
+    .header {
+        padding-top: 0;
+    }
+
+    .menu-products {
+        margin-bottom: 25px;
+    }
+
+    .menu-products-content {
+      display: none;
+    }
+  
+    label.menu-btn {
+      display: block;
+      padding-top: 29px;
+    }
+  
+    .header-logo {
+      display: none;
+  
+      &-content {
+        display: block
+      }
+    }
+  
+    .header-map {
+      display: none;
+    }
+  
+    .header-menu-nav {
+      display: none;
+    }
+  
+    .header-navigation {
+      margin-bottom: 28px;
+    }
+
+    #reklama-content {
+        height: 229px;
+    }
+
+    #reklama-slider {
+        margin-bottom: 40px;
+
+        &-content {
+            width: 375px;
+        }
+    }
+
+    .reklama-card {
+        margin: auto;
+    }
+  
+  }
+
+  @media (max-width: 800px) {
+    .header {
+        padding-top: 0;
+    }
+
+    .menu-products {
+        margin-bottom: 45px;
+    }
+      
+    .header-map {
+      display: none;
+    }
+    
+    .header-navigation {
+        width: auto;
+        margin-bottom: 28px;
+    }
+
+    #reklama-content {
+        height: 300px;
+    }
+
+    #reklama-slider {
+        margin-bottom: 40px;
+    }
+
+    .reklama-card {
+        margin: auto;
+    }
+  
+  }
+  
+  @media (max-width: 414px) {
+    .header {
+        padding-top: 0;
+    }
+
+    .menu-products {
+        margin-bottom: 25px;
+    }
+    .menu-products-content {
+      display: none;
+    }
+  
+    label.menu-btn {
+      display: block;
+      padding-top: 29px;
+    }
+  
+    .header-logo {
+      display: none;
+  
+      &-content {
+        display: block
+      }
+    }
+  
+    .header-map {
+      display: none;
+    }
+  
+    .header-menu-nav {
+      display: none;
+    }
+  
+    .header-navigation {
+      margin-bottom: 28px;
+    }
+
+    #reklama-content {
+        height: 229px;
+    }
+
+    .reklama-card {
+        margin: auto;
+    }
+  }
+
+  @media (max-width: 750px) {
+
+    label.menu-btn {
+        display: block;
+        padding-top: 5px;
+        margin: auto;
+        left: 2px;
+      }
+
+    .menu-products-content {
+    display: none;
+    }
+  }
+  
+  @media (max-width: 500px) {
+
+    .header-menu-nav {
+        display: none;
+      }
+
+      .header-logo {
+        margin-left: 35px;
+      }
+
+  }
+
+  @media (max-width: 375px) {
+    .header {
+        padding-top: 0;
+    }
+
+    .menu-products {
+        margin-bottom: 25px;
+    }
+  
+    label.menu-btn {
+      display: block;
+      padding-top: 29px;
+    }
+  
+    .header-logo {
+      display: none;
+  
+      &-content {
+        display: block
+      }
+    }
+    
+    .header-menu-nav {
+      display: none;
+    }
+  
+    .header-navigation {
+      margin-bottom: 28px;
+    }
+
+    #reklama-content {
+        height: 229px;
+    }
+
+    #reklama-slider {
+        margin-bottom: 40px;
+
+        &-content {
+            width: 375px;
+        }
+    }
+  }
