@@ -99,6 +99,72 @@
       justify-content: center;
       gap: 30px;
     }
+
+    .akcija {
+      display: none;
+    }
+
+    div.akcija-adaptiv {
+      display: block;
+    }
+
+    ul.buy-products-display {
+      width: 100%;
+    }
+
+    .buy-next {
+      display: none;
+    }
+  
+    div.buy-cards {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    div.footer-column-menu {
+      display: none;
+    }
+
+    div.dropdown {
+      display: block;
+
+      &-flex {
+        margin-bottom: 41px;
+      }
+    }
+
+    div.footer-flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .footer-icons {
+      margin-bottom: 80px;
+    }
+
+    .footer-data {
+      padding-bottom: 62px;
+    }
+
+    input.footer-input {
+      width: 203px;
+    }
+
+    button.footer-btn {
+      width: 117px;
+    }
+
+    div.footer-content {
+      width: 219px;
+      display: flex;
+      margin: auto;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
 }
 
 @media (max-width: 750px) {
@@ -239,11 +305,35 @@
     }
 
     div.popularity-slider-none {
-      display: flex;
+      display: block;
     }
 
     div.popularity-cards {
       display: none;
+    }
+
+    div.popularity-card {
+      height: 443px;
+    }
+
+    ul.buy-products-display {
+      display: none;
+    }
+
+    div.buy-slider-none {
+      display: block;
+    }
+
+    div.buy-cards {
+      display: none;
+    }
+
+    div.buy-card {
+      height: 443px;
+    }
+
+    div.buy-btn {
+      display: flex;
     }
 }
 
@@ -375,4 +465,10 @@
             width: 375px;
         }
     }
+  
+  div.footer-data {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
 }

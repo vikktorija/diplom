@@ -1,6 +1,6 @@
 .akcija{
     max-width: 1171px;
-    height: 165px;
+    max-height: 165px;
     margin: auto;
     margin-bottom: 72px;
     background: #1C62CD;
@@ -36,5 +36,54 @@
         font-size: 24px;
         line-height: 50px;
         cursor: pointer;
+    }
+
+    &-adaptiv {
+        display: none;
+        max-width: 1171px;
+        max-height: 165px;
+        margin: auto;
+        margin-bottom: 72px;
+        background: #1C62CD;   
+        
+        &-content {
+            width: 367px;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            padding-top: 10px;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 30px;
+            color: #FFFFFF;    
+            text-align: center;
+        }
+        
+        &-btn {
+            width: 284px;
+            height: 57px;
+            margin-top: 28px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #FFFFFF;
+            font-weight: 500;
+            font-size: 14px;
+            cursor: pointer;    
+        }
+
+        &-img {
+            margin: auto;
+
+            &-size {
+                width: 140px;
+                height: 97px;
+            }
+        }
+
+        &-flex {
+            display: flex;
+            justify-content: center;
+        }
     }
 }
