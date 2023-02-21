@@ -85,6 +85,20 @@
       &:hover { font-weight: bold; }
       &:hover::after { width: 100%; }
     }
+
+    ul.popularity-products-display {
+      width: 100%;
+    }
+
+    .popularity-next {
+      display: none;
+    }
+  
+    div.popularity-cards {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
 }
 
 @media (max-width: 750px) {
@@ -158,11 +172,10 @@
       &:hover::after { width: 100%; }
     }
 
-    .search-cards {
+    div.search-cards {
       display: flex;
       justify-content: center;
-      gap: 10px;
-    } 
+    }
 }
 
 @media (max-width: 500px) {
@@ -220,6 +233,18 @@
       display: flex;
       justify-content: center;
     }  
+
+    ul.popularity-products-display {
+      display: none;
+    }
+
+    div.popularity-slider-none {
+      display: flex;
+    }
+
+    div.popularity-cards {
+      display: none;
+    }
 }
 
   
@@ -300,6 +325,12 @@
     
     &:hover { font-weight: bold; }
     &:hover::after { width: 100%; }
+  }
+
+  div.popularity-padding {
+    display: flex;
+    justify-content: center;
+    padding: 0;
   }
 }
 
