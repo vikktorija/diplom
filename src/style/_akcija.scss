@@ -45,6 +45,7 @@
         margin: auto;
         margin-bottom: 72px;
         background: #1C62CD;   
+        border-color: #1C62CD;
         
         &-content {
             width: 367px;
@@ -52,23 +53,26 @@
             justify-content: center;
             margin: auto;
             padding-top: 10px;
+            margin-bottom: 8px;
             font-weight: bold;
-            font-size: 30px;
-            line-height: 30px;
+            font-size: 29px;
+            line-height: 27px;
             color: #FFFFFF;    
             text-align: center;
         }
         
         &-btn {
-            width: 284px;
-            height: 57px;
-            margin-top: 28px;
+            width: 200px;
+            height: 50px;
+            margin-top: 15px;
+            margin-bottom: 12px;
             display: flex;
             justify-content: center;
             align-items: center;
             background: #FFFFFF;
+            border-color: #1C62CD;
             font-weight: 500;
-            font-size: 14px;
+            font-size: 18px;
             cursor: pointer;    
         }
 
@@ -76,8 +80,8 @@
             margin: auto;
 
             &-size {
-                width: 140px;
-                height: 97px;
+                width: 100px;
+                height: 80px;
             }
         }
 

@@ -36,10 +36,18 @@
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+
+    &:hover {
+        transition: all .9s ease;
+    }
+
 }
 
 .dropdown-content a:hover {background-color: #7F7F7F;}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition: all .3s ease;
+}
 
 .dropdown:hover .dropbtn {background-color: #F9F9FC;}

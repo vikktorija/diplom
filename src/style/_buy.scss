@@ -135,7 +135,7 @@
                 font-weight: bold;
                 font-size: 30px;
                 line-height: 36px;
-                margin-bottom: 14px;
+                margin-bottom: 16px;
             }
 
             &-none {
@@ -147,10 +147,13 @@
                 &-title {
                     font-size: 16px;
                     line-height: 19px;
-                    text-decoration: underline;
 
                     & a {
                         color: #1C62CD;
+                    }
+
+                    & a:hover {
+                        text-decoration: underline;
                     }
                 }
             }
@@ -219,11 +222,9 @@
     max-width: 270px;
     max-height: 403px;
     margin: auto;
-    margin-bottom: 73px;
+    margin-bottom: 112px;
     position: relative;
-    border: 1.3px solid #a9a4a4;
     border-radius: 3px;
-    box-shadow: 0px 0px 6px 2px rgba(138, 137, 137, 0.59), 0px 1px 6px -15px rgba(253, 244, 244, 0.92);
   }
   
   #buy-slider-content {
@@ -232,6 +233,8 @@
     padding: auto;
     width: 100%;
     height: 100%;
+    border: 1.3px solid #a9a4a4;
+    box-shadow: 0px 0px 6px 2px rgba(138, 137, 137, 0.59), 0px 1px 6px -15px rgba(253, 244, 244, 0.92);
 
   }
   
@@ -293,9 +296,9 @@
     border: 1px solid #1C62CD;  
   }
   
-  #buy-slider label[for=buy-btn-1] { margin-bottom: -5px; margin-left: -40px }
-  #buy-slider label[for=buy-btn-2] { margin-bottom: -5px; margin-left: -20px }
-  #buy-slider label[for=buy-btn-3] { margin-bottom: -5px; margin-left: 0px }
+  #buy-slider label[for=buy-btn-1] { margin-bottom: -45px; margin-left: -40px }
+  #buy-slider label[for=buy-btn-2] { margin-bottom: -45px; margin-left: -20px }
+  #buy-slider label[for=buy-btn-3] { margin-bottom: -45px; margin-left: 0px }
   
   #buy-slider #buy-btn-1:checked~#buy-slider-content>ul { left: 0 }
   #buy-slider #buy-btn-2:checked~#buy-slider-content>ul { left: -100% }
